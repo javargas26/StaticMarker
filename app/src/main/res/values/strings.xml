@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Mapssss</string>
+
+    <string name="btn_login">Login</string>
+    <string name="btn_link_signup">Sing up</string>
+
+    <string-array name="tipo_iluminacion_vehicular_lista">
+        <item>M1</item>
+        <item>M2</item>
+        <item>M3</item>
+        <item>M4</item>
+        <item>M5</item>
+
+    </string-array>
+
+    <string name="none_paired">non</string>
+
+
+    <string name="title_activity_maps">title_activity_maps</string>
+
+
+    <string name="valueLatitude">Latitude</string>
+    <string name="Latitude">Latitude</string>
+    <string name="valueLongitude">Longitude</string>
+    <string name="Longitude">Longitude</string>
+    <string name="Coordinates">Coordinates</string>
+
+
+
+</resources>
