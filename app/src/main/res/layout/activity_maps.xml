@@ -15,49 +15,48 @@ android:paddingTop="@dimen/activity_vertical_margin">
         android:id="@+id/rlmap"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/rlData">
+        android:layout_above="@+id/rlData"
+        android:layout_centerHorizontal="true">
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <fragment xmlns:android="http://schemas.android.com/apk/res/android"
 
-                android:name="com.google.android.gms.maps.SupportMapFragment"
                 android:id="@+id/map_fragment"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 
 
-
-
         </LinearLayout>
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:src="@drawable/ic_action_name"
-            />
+
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_action_name" />
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/rlData"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingBottom="0dp"
+
+
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="189dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true">
-
-
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp">
 
 
         <LinearLayout
             android:id="@+id/llGPS"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="131dp"
 
             android:layout_marginTop="@dimen/activity_horizontal_margin"
             android:divider="?android:dividerHorizontal"
@@ -71,8 +70,8 @@ android:paddingTop="@dimen/activity_vertical_margin">
                 android:layout_marginTop="@dimen/activity_vertical_margin"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Get GPS"
-                android:onClick="get_gps"/>
+                android:onClick="get_gps"
+                android:text="Get GPS" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -147,7 +146,18 @@ android:paddingTop="@dimen/activity_vertical_margin">
             </LinearLayout>
 
         </LinearLayout>
+
+        <Button
+            android:id="@+id/continuar_location_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="next_activity_nueve_puntos"
+            android:text="next" />
     </RelativeLayout>
+
 
 
 </RelativeLayout>
